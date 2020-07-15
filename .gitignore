@@ -1,0 +1,8 @@
+#IGNORING node_modules 
+node_modules/*
+
+#IGNORING dist FOLDER
+dist/*
+
+#IGNORING PULL REQUEST TEMPLATE
+.github/*
