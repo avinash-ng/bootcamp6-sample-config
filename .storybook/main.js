@@ -1,9 +1,9 @@
 module.exports = {
-  stories: ['../stories/**/*.stories.tsx'],
-  addons: ['@storybook/addon-actions', '@storybook/addon-links'],
-  webpackFinal: async config => {
-    // do mutation to the config
+    stories: ['../src/components/**/**/*.stories.(tsx|ts|jsx|js)'],
+    addons: ['@storybook/addon-actions', '@storybook/addon-links', '@storybook/preset-typescript', '@storybook/addon-knobs'],
+    webpackFinal: async config => {
+        // do mutation to the config
 
-    return config;
-  },
+        return config;
+    },
 };
